@@ -20,3 +20,34 @@ math{direction:ltr;unicode-bidi:isolate;font-family:"Cambria Math","STIX Two Mat
 
 /* Requested review refinements */
 .graph-panel{position:relative;overflow:visible}.graph-time-badge{position:absolute;top:12px;left:12px;z-index:4;display:flex;align-items:center;gap:7px;background:rgba(255,255,255,.94);border:1px solid var(--border);border-radius:14px;padding:7px 10px;box-shadow:0 3px 10px rgba(23,54,94,.08);font-size:15px;direction:rtl}.graph-time-badge img{width:28px;height:28px}.graph-time-badge b{font-variant-numeric:tabular-nums}.delta-x-value{color:var(--viz-series-2)}.delta-y-value{color:var(--viz-series-3)}.slope-result{display:flex;justify-content:center;margin-top:4px}.slope-result .math-equation{justify-content:center;border:2px solid var(--burgundy);border-radius:14px;background:#fffafd;padding:12px 18px;min-width:190px}.summary-metrics{display:grid;gap:10px;max-width:430px;margin:24px auto;text-align:right}.summary-metrics>div{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:12px 16px;background:#f7f9fb;border:1px solid var(--border);border-radius:14px}.summary-metrics strong{color:var(--burgundy);font-size:21px}.activity-heading{min-height:48px}.stats{margin:10px 0 12px}.stats span{background:white;border:1px solid var(--border);border-radius:12px;padding:5px 9px}.workspace{margin-top:8px}.values .math-equation{font-size:1.03em}#plot [data-line=true]{pointer-events:stroke}@media(min-width:900px){#activity{min-height:0}.workspace{grid-template-columns:minmax(0,1.55fr) minmax(300px,.85fr);gap:18px}.graph-panel,.answer-panel{padding:14px}.activity-heading h2{font-size:23px}#instruction{margin:8px 0 12px}.legend{margin-top:-2px}.check{margin-top:10px}}@media(max-width:750px){.graph-time-badge{position:static;width:max-content;margin:0 0 8px auto}.summary-metrics{max-width:100%}}
+
+/* Lab review (Oct 2026): point headings with sliders, build tasks, activity home, axis arrows */
+.heading-actions{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.lab-tasks{background:#fdf7ec;border:1px solid var(--mustard);border-radius:14px;padding:8px 14px;margin-bottom:14px}
+.lab-tasks .text-button{font-weight:700;font-size:17px;display:inline-flex;align-items:center;gap:8px}
+#task-text{margin:6px 0 4px;font-size:18px;line-height:1.6;color:var(--blue)}
+.point-group{display:grid;gap:2px;padding:10px 0 12px;border-bottom:1px solid var(--border)}
+.point-group:last-child{border-bottom:0}
+.point-title{font-size:20px;font-weight:700;color:var(--blue);margin-bottom:2px}
+.point-title math{margin-inline:0}
+#point-controls .point-group label{display:grid;grid-template-columns:2.6em minmax(0,1fr) 2.6em;align-items:center;gap:10px}
+.slider-name{font-size:19px;color:var(--blue);text-align:center}
+.point-group output{font-family:"Cambria Math",serif;font-size:19px;font-weight:700;color:var(--blue);text-align:center;unicode-bidi:isolate}
+.undefined-note{font-size:19px}
+.axis-name{font-weight:700;font-size:15px;fill:var(--muted-foreground)}
+.slope-result math{font-size:1.35em}
+.slope-result mfrac{font-size:1.15em}
+.help-equations mfrac{font-size:1.2em}
+/* Lab calculation block: fixed layout, no wrapping, no jumping (Oct 23) */
+.values{font-size:21px}
+.calc-lines{display:grid;gap:8px;justify-items:start;text-align:left;direction:ltr;padding-inline:4px}
+.calc-lines math{margin:0;white-space:nowrap}
+.slope-result{display:block;margin-top:6px}
+.slope-box{box-sizing:border-box;width:100%;min-height:118px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:6px;border:2px solid var(--burgundy);border-radius:14px;background:#fffafd;padding:10px 14px;overflow:hidden}
+.slope-box>math{white-space:nowrap;margin:0;font-size:1.15em}
+.slope-box mfrac{font-size:1em}
+.slope-box .undefined-note{font-size:18px;white-space:nowrap}
+.point-title{min-height:1.6em}
+#task-text{min-height:3.2em}
+.calc-lines>div{height:36px;display:flex;align-items:center}
+.slope-box>math,.slope-box>math *{math-style:normal}
